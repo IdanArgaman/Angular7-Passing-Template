@@ -1,0 +1,13 @@
+Tab Component
+
+<div style="padding: 1em; padding-left: 0">
+	Template:
+	<div style="padding: 1em">
+		<ng-container *ngIf="template" [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{data: dataContext}"></ng-container>
+	</div>
+	<!-- 
+    THe template is provided with context composed from an object
+    containing a "data" property. This data property is mapped to
+    a template variable named "hero". The template access the 
+    data property by using the "hero" variable in its html markup -->
+</div>
