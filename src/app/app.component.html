@@ -1,0 +1,9 @@
+<!-- Note the template data variable, the "data" property
+     inside the context passed to the template, is mapped to a 
+     template variable called "hero" -->
+<ng-template #hello let-hero="data">
+  Hello, {{hero?.name}}
+</ng-template>
+
+<!-- we pass an object to be used as the template data  -->
+<app-tab [template]="hello" [dataContext]="{name:'idan'}"></app-tab>
