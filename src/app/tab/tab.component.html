@@ -3,7 +3,7 @@ Tab Component
 <div style="padding: 1em; padding-left: 0">
 	Template:
 	<div style="padding: 1em">
-		<ng-container *ngIf="template" [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{data: dataContext}"></ng-container>
+		<ng-container *ngIf="template" [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{data: dataContext, $implicit: {age: 36}}"></ng-container>
 	</div>
 	<!-- 
     THe template is provided with context composed from an object
